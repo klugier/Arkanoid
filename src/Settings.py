@@ -11,6 +11,12 @@ import os
 
 
 class GeneralSettings(object):
+    """
+    Klasa odpowiedzialna za przetwarzanie (zapis i odczyt) ustawień gry.
+    Do zapisu ustawiń został użyty format JSON.
+    Wzorzec projektowy: Singlerton (jedne ustawienia na cały program).
+    """
+
     _instance = None
 
     def __init__(self):

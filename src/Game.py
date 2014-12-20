@@ -16,6 +16,11 @@ from pygame.locals import *
 import Settings
 
 class Colision(object):
+    """
+    Klasa reprezentująca kolizję w grze.
+    Posiada informację z jakiego typu kolizją mamy do czynienia co pozwala
+    podjąć odpowiednią decyzję np. w którą stronę należy odbić piłkę.
+    """
 
     def __init__(self, left, right, top, bottom):
         self._left = left
@@ -48,7 +53,10 @@ class Colision(object):
 
 
 class GameObject(object):
-
+    """
+    Wyjściowa klasa dla wszystkich obiektów gry.
+    """
+    
     def __init__(self, left, right, top, bottom):
         self.setRect(left, right, top, bottom)
         self._color = pygame.Color(255, 255, 255)
@@ -162,7 +170,11 @@ class GameObject(object):
 
 
 class Block(GameObject):
-
+    """
+    Klasa reprezentuje blok w grze. Celem gracza jest zniszczenie wszystkich
+    obiektów tego typu na danej planszy.
+    """
+    
     def __init__(self, left, right, top, bottom):
         super(self.__class__, self).__init__(left, right, top, bottom)
 
@@ -232,7 +244,11 @@ class Block(GameObject):
 
 
 class Ball(GameObject):
-
+    """
+    Klasa reprezentuje piłkę, czyli obiekt który porusza się po planszy i rozbija
+    bloki.
+    """
+    
     def __init__(self, left, right, top, bottom):
         super(self.__class__, self).__init__(left, right, top, bottom)
         self._r = int((self._right - self._left) / 2)
@@ -260,7 +276,11 @@ class Ball(GameObject):
 # **********************************************************************
 
 class Arkanoid(object):
-
+    """
+    Klasa gry. Zawiera całą logikę obsługę zdarzeń. Ponadto odpowiada za wywoływanie
+    metod rysujących.
+    """
+    
     def init(self):
         pygame.init()
         # os.environ['SDL_VIDEO_CENTERED'] = '1'
