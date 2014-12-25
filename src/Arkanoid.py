@@ -10,6 +10,8 @@ import Settings
 def main():
     isHelp = False
     isQuite = False
+    isVersion = False
+    
     i = 0
     for arg in sys.argv:
         if i > 0:
@@ -17,8 +19,16 @@ def main():
                 isHelp = True
             elif arg == "-q" or arg == "--quite":
                 isQuite = True
+            elif arg == "-v" or arg == "--version":
+                isVersion = True
         i += 1
-    if isHelp:
+    
+    if isVersion:
+        if not isQuite:
+            sys.stdout.write(
+                "Arkandoid - wersja 1.0\n")
+        quit()
+    elif isHelp:
         if not isQuite:
             sys.stdout.write(
                 "Pomoc programu Arkanoid - Zbigniew Rębacz\n\n")
