@@ -1,7 +1,7 @@
 # PythonArkanoid
 
 ## Overview
-PythonArkanoid is Arkanoid implementation using Python programing language and PyGame library. This project was developed for the purposes of completition course on my university. So sure it posseses the educational value. Feel free to study my code and reused it in your projects. Good luck!
+PythonArkanoid is Arkanoid implementation using Python programing language and PyGame library. This project was developed for the purposes of completition course on my university. I am sure that it posseses some educational value. Feel free to study my code and reused it in your projects. Good luck!
 
 ## Project information
 Author: Zbigniew Rębacz <br />
