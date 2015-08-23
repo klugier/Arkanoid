@@ -1,3 +1,3 @@
 # PythonArkanoid
 
-Arkanoid implementation with Python & PyGame library.
+PythonArkanoid is Arkanoid implementation using Python programing language and PyGame library.
