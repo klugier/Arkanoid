@@ -9,5 +9,8 @@ Release date: 02.2015 <br />
 Development status: Inactive <br />
 License: BSD (For more details please view LICENSE.txt file) <br />
 
+## Screenshots
+![Alt text](/doc/images/View.png?raw=true)
+
 ## Extras
 I have attended in other open sources projects outside GitHub. Here is the link to the biggest project in which I was involved: www.ultimatepp.org.
