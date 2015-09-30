@@ -9,7 +9,7 @@ Release date: 02.2015 <br />
 Development status: Inactive <br />
 License: BSD (For more details please view LICENSE.txt file) <br />
 
-## Screenshots
+## Screenshot
 ![Alt text](/doc/images/View.png?raw=true)
 
 ## Extras
